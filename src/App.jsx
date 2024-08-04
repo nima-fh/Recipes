@@ -4,12 +4,14 @@ import Create from "./pages/create/create";
 import Home from "./pages/home/home";
 import Recipe from "./pages/Recipe/Recipe";
 import Search from "./pages/search/search";
+import ThemeSelector from "./components/ThemSelector";
 
 function App() {
   return (
     <div className="">
       <BrowserRouter>
         <Navbar_Component />
+        <ThemeSelector />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/create" element={<Create />} />
